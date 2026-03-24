@@ -1,6 +1,19 @@
 import TaskList from "@/components/TaskList";
+import { cacheLife } from "next/cache";
 
-async function getTasks() {
+type Task = {
+    userId: number;
+    id: number;
+    title: string;
+    completed: boolean;
+};
+
+
+async function getTasks(): Promise<Task[]> {
+    "use cache";
+
+    cacheLife("minutes");
+
     const res = await fetch(
         "https://jsonplaceholder.typicode.com/todos?_limit=10"
     );
