@@ -1,21 +1,8 @@
-"use client";
-
-
 import "@/app/styles/globals.css";
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
 import Link from "next/link";
 
-
-
-export default function PostsPage() {
-    const router = useRouter();
-
-    useEffect(() => {
-        router.refresh();
-    }, []);
-
-    const date = new Date().toLocaleString();
+const PostsPage = () => {
+    const date = new Date().toISOString();
 
     return (
         <div className="container">
@@ -30,4 +17,5 @@ export default function PostsPage() {
             </div>
         </div>
     );
-}
+};
+export default PostsPage;

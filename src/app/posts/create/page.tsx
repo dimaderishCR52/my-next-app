@@ -5,6 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { postSchema } from "@/app/lib/validation";
 import { useRouter } from "next/navigation";
 import "@/app/styles/globals.css";
+import {revalidatePostsPage} from "@/app/posts/create/actions";
 
 export default function CreatePostPage() {
     const router = useRouter();
@@ -26,7 +27,7 @@ export default function CreatePostPage() {
             },
         });
 
-        router.push("/posts");
+        revalidatePostsPage();
     };
 
     return (
