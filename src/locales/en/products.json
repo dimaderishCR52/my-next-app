@@ -1,0 +1,18 @@
+{
+  "title": "Products",
+
+  "product": "Product",
+
+  "description": "Product description",
+
+  "price": "Price: {{price}} $",
+
+  "comments": "Comments",
+
+  "items_one": "{{count}} product",
+  "items_other": "{{count}} products",
+
+  "richText": "Read more <0>here</0>",
+  "backText": "← Back"
+
+}

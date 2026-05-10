@@ -1,0 +1,10 @@
+{
+  "welcome": "Привет, {{name}}!",
+  "description": "Интернационализация в Next.js",
+
+  "items_one": "{{count}} товар",
+  "items_few": "{{count}} товара",
+  "items_many": "{{count}} товаров",
+
+  "richText": "Нажмите <0>сюда</0> для продолжения"
+}

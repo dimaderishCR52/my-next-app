@@ -1,0 +1,9 @@
+{
+  "welcome": "Hello, {{name}}!",
+  "description": "Internationalization in Next.js",
+
+  "items_one": "{{count}} item",
+  "items_other": "{{count}} items",
+
+  "richText": "Click <0>here</0> to continue"
+}

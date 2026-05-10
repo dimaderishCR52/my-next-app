@@ -1,0 +1,18 @@
+{
+  "title": "Товары",
+
+  "product": "Товар",
+
+  "description": "Описание товара",
+
+  "price": "Цена: {{price}} $",
+
+  "comments": "Комментарии",
+
+  "items_one": "{{count}} товар",
+  "items_few": "{{count}} товара",
+  "items_many": "{{count}} товаров",
+
+  "richText": "Подробнее <0>здесь</0>",
+  "backText": "← Назад"
+}
